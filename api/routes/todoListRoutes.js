@@ -12,7 +12,6 @@ module.exports = function(app) {
     .get(db.list_all_tasks)
     .post(db.create_a_task);
 
-
   app.route('/tasks/:id')
     .get(db.read_a_task)
     .put(db.update_a_task)
